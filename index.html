@@ -3,25 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#f8d8dd" />
+
+  <meta name="theme-color" content="#f4c4cf" />
 
   <meta
     name="description"
-    content="Un detalle especial de cumpleaños para Camila."
+    content="Un pequeño detalle hecho con mucho cariño para celebrar el cumpleaños de Camila."
   />
 
-  <title>Feliz cumpleaños, Camila 💛</title>
+  <!-- Vista previa al compartir -->
+  <meta property="og:title" content="Feliz cumpleaños, Cami 💛" />
+  <meta
+    property="og:description"
+    content="Hay personas que llegan poquito a poquito y terminan ocupando un lugar muy bonito. Este detalle es para ti."
+  />
+  <meta
+    property="og:image"
+    content="https://developls.github.io/cumpleanos_camila/camila-07.webp?v=20260814"
+  />
+  <meta property="og:type" content="website" />
 
-  <link rel="stylesheet" href="./style.css?v=20260814" />
+  <title>Feliz cumpleaños, Cami 💛</title>
+
+  <!-- Precarga de la fotografía inicial -->
+  <link
+    rel="preload"
+    as="image"
+    href="./camila-07.webp?v=20260814"
+  />
+
+  <link
+    rel="stylesheet"
+    href="./style.css?v=20260814"
+  />
 </head>
 
 <body>
 
+  <!-- Confeti -->
   <canvas
     id="confetti"
     aria-hidden="true"
   ></canvas>
 
+  <!-- Decoración ambiental -->
   <div
     class="ambient"
     aria-hidden="true"
@@ -36,8 +61,9 @@
 
   <main class="app">
 
+
     <!-- ===================================================== -->
-    <!-- INTRO -->
+    <!-- PORTADA -->
     <!-- ===================================================== -->
 
     <section
@@ -48,7 +74,7 @@
       <div class="panel hero">
 
         <div class="eyebrow">
-          14 de agosto · un día bonito
+          14 de agosto · hoy celebro que existas 💛
         </div>
 
 
@@ -73,14 +99,26 @@
 
 
         <h1>
-          Feliz cumpleaños, Cami
+          Feliz cumpleaños,<br>
+          Cami
         </h1>
 
 
         <p>
-          Hoy quería regalarte algo sencillo, bonito y hecho con cariño.
-          No llevamos tanto tiempo juntos, pero ha sido suficiente para que
-          te vuelvas alguien muy especial para mí.
+          Hoy no quería limitarme a decirte simplemente
+          <strong>“feliz cumpleaños”</strong>.
+        </p>
+
+        <p>
+          Quería regalarte algo un poquito diferente,
+          algo hecho pensando en ti, en tu sonrisa,
+          en las cosas bonitas que he ido descubriendo
+          y en lo mucho que me alegra haberte encontrado.
+        </p>
+
+
+        <p class="small-note">
+          Así que preparé este pequeño recorrido para ti… 🌷
         </p>
 
 
@@ -88,7 +126,7 @@
           type="button"
           data-next="wish"
         >
-          Abrir mi detalle para ti
+          Abrir mi detalle para ti 💛
         </button>
 
       </div>
@@ -116,15 +154,28 @@
         </div>
 
 
+        <div class="eyebrow">
+          Antes de continuar…
+        </div>
+
+
         <h2>
-          Primero, un deseo
+          Tengo un deseo para ti
         </h2>
 
 
         <p>
-          Que este nuevo año de vida te encuentre con mucha salud,
-          tranquilidad, personas bonitas alrededor y razones de sobra
-          para sonreír.
+          Deseo que este nuevo año de vida te encuentre
+          rodeada de tranquilidad, salud, personas bonitas
+          y muchos motivos para sonreír.
+        </p>
+
+
+        <p>
+          Que tengas días para cumplir sueños,
+          otros para descansar,
+          muchos para reír…
+          y alguno que otro para simplemente dejarte consentir.
         </p>
 
 
@@ -145,11 +196,16 @@
         </div>
 
 
+        <p class="small-note">
+          Todavía no soples las velitas… eso viene después. ✨
+        </p>
+
+
         <button
           type="button"
           data-next="teacher"
         >
-          Seguir
+          Quiero decirte algo más
         </button>
 
       </div>
@@ -159,7 +215,7 @@
 
 
     <!-- ===================================================== -->
-    <!-- VOCACIÓN -->
+    <!-- SU VOCACIÓN -->
     <!-- ===================================================== -->
 
     <section
@@ -169,11 +225,12 @@
 
       <div class="panel split-card">
 
+
         <div class="photo-frame tall">
 
           <img
             src="./camila-03.webp?v=20260814"
-            alt="Camila en un paisaje colorido"
+            alt="Camila frente a una mariposa colorida"
             loading="lazy"
             decoding="async"
           />
@@ -184,26 +241,31 @@
         <div class="copy">
 
           <div class="eyebrow">
-            🌼 Tu vocación
+            🌼 Una de las cosas que admiro de ti
           </div>
 
 
           <h2>
-            Para la profe que acompaña pequeños comienzos
+            La profe detrás de esa sonrisa
           </h2>
 
 
           <p
             class="type"
-            data-text="Ser profe de jardín no es cualquier cosa: requiere paciencia, ternura, energía y un corazón enorme. Me gusta pensar que cada niño que pasa por tus días se lleva un poquito de tu forma de enseñar, cuidar y hacer sonreír."
+            data-text="Ser profe de jardín puede parecer sencillo para quien lo mira desde afuera, pero yo sé que requiere muchísima paciencia, creatividad, ternura y un corazón enorme. Me parece muy bonito pensar que acompañas a pequeños que están empezando a descubrir el mundo y que, de alguna manera, también vas dejando un pedacito de ti en sus recuerdos."
           ></p>
+
+
+          <p class="small-note">
+            Y eso habla muy bonito de la mujer que eres. 🌷
+          </p>
 
 
           <button
             type="button"
             data-next="smile"
           >
-            Continuar
+            Hay otra cosa que me gusta de ti
           </button>
 
         </div>
@@ -225,6 +287,7 @@
 
       <div class="panel split-card reverse">
 
+
         <div class="photo-frame tall">
 
           <img
@@ -240,26 +303,32 @@
         <div class="copy">
 
           <div class="eyebrow">
-            ☀️ Esa sonrisa
+            ☀️ Definitivamente…
           </div>
 
 
           <h2>
-            Una de mis partes favoritas de ti
+            Me encanta verte sonreír
           </h2>
 
 
           <p
             class="type"
-            data-text="Me gusta verte sonreír. Tienes una forma muy tuya de verte tranquila, linda y auténtica, incluso en los días más normales. Y sí… esa sonrisa tuya me alegra más de lo que probablemente imaginas."
+            data-text="Hay sonrisas que uno simplemente ve y otras que termina recordando. La tuya tiene algo muy especial. Me gusta cuando estás tranquila, cuando te ríes, cuando haces alguna ocurrencia y también esa forma tuya de mirarme que a veces me deja sin saber muy bien qué decir."
           ></p>
+
+
+          <p class="small-note">
+            Aunque probablemente no te lo diga siempre,
+            verte feliz también me hace feliz a mí. 💛
+          </p>
 
 
           <button
             type="button"
             data-next="care"
           >
-            Continuar
+            Y también quiero decirte esto…
           </button>
 
         </div>
@@ -271,7 +340,7 @@
 
 
     <!-- ===================================================== -->
-    <!-- CUIDARTE -->
+    <!-- CUIDARLA -->
     <!-- ===================================================== -->
 
     <section
@@ -289,23 +358,38 @@
         </div>
 
 
+        <div class="eyebrow">
+          Porque también me importas
+        </div>
+
+
         <h2>
-          También quiero verte bien
+          Quiero verte bien
         </h2>
 
 
         <p>
-          Sé que estos días has estado un poquito enfermita y que el asma
-          te ha dado lata.
+          Sé que estos días no te has sentido del todo bien
+          y que el asma te ha estado molestando un poquito.
+        </p>
 
-          Por eso, además de felicitarte, deseo de corazón que te recuperes
-          pronto, que puedas respirar más tranquila y que este cumpleaños
-          venga con descanso, calma y muchos cuidados.
+
+        <p>
+          Y aunque no puedo hacer desaparecer mágicamente
+          esos días difíciles, sí quiero que sepas que deseo
+          de corazón que te recuperes pronto.
+        </p>
+
+
+        <p>
+          Que puedas respirar tranquila,
+          descansar, cuidarte y sentirte mucho mejor.
         </p>
 
 
         <p class="small-note">
-          Prometo que hoy el único exceso permitido es de cariño y pastel. 🎂
+          Y si puedo ayudarte, acompañarte o simplemente
+          hacerte sonreír un rato, aquí estoy. 🤍
         </p>
 
 
@@ -313,7 +397,7 @@
           type="button"
           data-next="us"
         >
-          Seguir
+          Ahora sí… algo sobre nosotros 💛
         </button>
 
       </div>
@@ -368,26 +452,32 @@
         <div class="copy">
 
           <div class="eyebrow">
-            💛 Nosotros
+            💛 Tú y yo
           </div>
 
 
           <h2>
-            Poquito tiempo, cariño de verdad
+            No hace falta llevar años para sentir algo bonito
           </h2>
 
 
           <p
             class="type"
-            data-text="No quiero medir lo que siento por el calendario. Llevamos poco tiempo, sí, pero me gusta lo que estamos construyendo, conocerte con calma, compartir contigo y descubrir esas cosas pequeñas que te hacen ser tú. Te quiero mucho y me alegra poder celebrar este cumpleaños a tu lado."
+            data-text="Sé que nuestra historia apenas está comenzando. Todavía tenemos muchísimo por descubrir el uno del otro y justamente eso también me parece bonito. No quiero medir lo que siento por el tiempo que llevamos, sino por la tranquilidad que siento contigo, por las ganas que tengo de verte, por nuestras conversaciones, nuestras risas y esas pequeñas cosas que poco a poco empiezan a convertirse en recuerdos."
           ></p>
+
+
+          <p class="small-note">
+            Me gusta esto que estamos construyendo.
+            Sin carreras, sin presiones… pero con mucho cariño. 💛
+          </p>
 
 
           <button
             type="button"
             data-next="gallery"
           >
-            Ver unos recuerdos
+            Quiero mostrarte algo 📸
           </button>
 
         </div>
@@ -412,13 +502,20 @@
 
 
         <div class="eyebrow">
-          📸 Un poquito de ti
+          📸 Algunos pedacitos de ti
         </div>
 
 
         <h2>
-          Porque también me gusta guardar tus sonrisas
+          Porque tus sonrisas también merecen quedarse guardadas
         </h2>
+
+
+        <p>
+          Diferentes días, diferentes momentos,
+          diferentes versiones de ti…
+          y en todas hay algo que me gusta.
+        </p>
 
 
 
@@ -426,91 +523,78 @@
 
 
           <figure>
-
             <img
               src="./camila-02.webp?v=20260814"
               alt="Camila en un lugar iluminado"
               loading="lazy"
               decoding="async"
             />
-
           </figure>
 
 
-
           <figure>
-
             <img
               src="./camila-04.webp?v=20260814"
               alt="Retrato de Camila"
               loading="lazy"
               decoding="async"
             />
-
           </figure>
 
 
-
           <figure>
-
             <img
               src="./camila-06.webp?v=20260814"
               alt="Camila en un café"
               loading="lazy"
               decoding="async"
             />
-
           </figure>
 
 
-
           <figure>
-
             <img
               src="./camila-03.webp?v=20260814"
               alt="Camila frente a una mariposa colorida"
               loading="lazy"
               decoding="async"
             />
-
           </figure>
 
 
-
           <figure>
-
             <img
               src="./camila-05.webp?v=20260814"
-              alt="Camila en una plaza"
+              alt="Camila disfrutando un paseo"
               loading="lazy"
               decoding="async"
             />
-
           </figure>
 
 
-
           <figure>
-
             <img
               src="./camila-01.webp?v=20260814"
               alt="Camila con sombrero"
               loading="lazy"
               decoding="async"
             />
-
           </figure>
 
 
         </div>
 
 
+        <p class="small-note">
+          Pero todavía falta mi parte favorita… 💌
+        </p>
+
 
         <button
           type="button"
           data-next="message"
         >
-          Leer lo que quería decirte
+          Leer mi carta para ti
         </button>
 
 
@@ -533,50 +617,82 @@
 
 
         <div class="eyebrow">
-          💌 Para Camila
+          💌 Para ti
         </div>
 
 
         <h2>
-          Feliz cumpleaños, mi Cami
+          Feliz cumpleaños, Cami
         </h2>
 
 
         <p>
-          Espero que hoy te consientan mucho y que tengas un día de esos
-          que se quedan guardados bonito en la memoria.
+          No sé exactamente en qué momento empezaste a ocupar
+          un lugar tan bonito en mis días.
         </p>
 
 
         <p>
-          Admiro la dulzura que tienes para trabajar con tus niños,
-          tu forma de seguir adelante y esa mezcla tuya de carácter
-          y ternura.
+          Tal vez fue entre alguna conversación,
+          alguna sonrisa, algún abrazo o simplemente
+          mientras te iba conociendo un poquito más.
         </p>
 
 
         <p>
-          Me alegra haberte encontrado y poder seguir conociéndote
-          sin prisas, disfrutando lo que vamos construyendo.
+          Lo cierto es que hoy me alegra mucho poder celebrar tu vida.
         </p>
 
 
         <p>
-          Deseo que este nuevo año te traiga salud, tranquilidad,
-          sueños cumplidos, aventuras, momentos en familia,
-          muchas risas y también tiempo para ti.
+          Me gusta tu forma de ser, tu sonrisa,
+          tu manera de querer a tus niños,
+          tu carácter, tu ternura y todas esas pequeñas cosas
+          que todavía sigo descubriendo de ti.
         </p>
 
 
         <p>
-          Y entre todo eso, espero poder estar presente en muchos
-          momentos bonitos, apoyarte, hacerte reír y seguir sumando
-          recuerdos contigo.
+          Sé que nosotros apenas estamos empezando
+          y no sé todas las páginas que todavía nos quedan por escribir.
+        </p>
+
+
+        <p>
+          Pero sí sé que me gusta compartir este presente contigo.
+        </p>
+
+
+        <p>
+          Me gusta conocerte sin prisas.
+          Me gusta hacerte reír.
+          Me gusta saber de ti.
+          Me gusta abrazarte.
+          Y sí… también me gusta extrañarte un poquito
+          cuando no estás cerca.
+        </p>
+
+
+        <p>
+          Para este nuevo año de tu vida deseo que tengas salud,
+          tranquilidad, sueños que se cumplan,
+          nuevas aventuras, muchos momentos con tu familia,
+          risas inesperadas y días en los que te sientas
+          profundamente orgullosa de ti misma.
+        </p>
+
+
+        <p>
+          Y entre todos esos momentos,
+          espero tener la fortuna de compartir contigo
+          muchos de los que todavía están por venir.
         </p>
 
 
         <p class="signature">
-          Te quiero mucho. Feliz cumpleaños. 💛
+          Te quiero mucho, Cami. 💛
+          <br><br>
+          Feliz cumpleaños.
         </p>
 
 
@@ -584,7 +700,7 @@
           type="button"
           data-next="final"
         >
-          Una última cosa…
+          Me falta una última cosa… ✨
         </button>
 
 
@@ -610,7 +726,7 @@
 
           <img
             src="./camila-04.webp?v=20260814"
-            alt="Camila"
+            alt="Camila sonriendo"
             loading="lazy"
             decoding="async"
           />
@@ -618,31 +734,42 @@
         </div>
 
 
-
         <div class="birthday-badge">
-          🎉 FELIZ CUMPLEAÑOS 🎉
+          🎉 FELIZ CUMPLEAÑOS, CAMI 🎉
         </div>
 
 
-
         <h2>
-          Que este nuevo año te trate muy bonito, Cami.
+          Que este nuevo año de vida te trate muy bonito
         </h2>
 
 
-
         <p>
-          Que sigas enseñando con ternura, sonriendo así de bonito,
-          cuidándote mucho y cumpliendo todo eso que sueñas.
+          Que te dé salud.
+          Que te dé tranquilidad.
+          Que te acerque a tus sueños.
         </p>
 
+
+        <p>
+          Que nunca te falten motivos para sonreír,
+          personas que te quieran bonito
+          y niños que sigan recordando con cariño
+          a su profe Cami.
+        </p>
+
+
+        <p class="small-note">
+          Y ojalá también nos regale muchos momentos
+          bonitos para seguir compartiendo. 💛
+        </p>
 
 
         <button
           type="button"
           id="candlesBtn"
         >
-          Soplar las velitas ✨
+          Soplar las velitas 🎂✨
         </button>
 
 
@@ -652,7 +779,6 @@
           id="surprise"
           aria-live="polite"
         >
-
 
           <div
             class="big-heart"
@@ -668,10 +794,27 @@
 
 
           <p>
-            El mío ya lo sabes:
-            verte feliz, sana y muy consentida hoy.
+            Espero que el tuyo se cumpla.
           </p>
 
+
+          <p>
+            El mío es bastante sencillo:
+          </p>
+
+
+          <p>
+            <strong>
+              que estés bien, que seas muy feliz
+              y que pueda seguir compartiendo contigo
+              muchas sonrisas como esta.
+            </strong>
+          </p>
+
+
+          <p class="signature">
+            Feliz cumpleaños, hermosa. 💛
+          </p>
 
         </div>
 
@@ -686,16 +829,14 @@
 
 
   <footer>
-    Hecho especialmente para Camila · con cariño 💛
+    Hecho especialmente para Cami · con mucho cariño 💛
   </footer>
-
 
 
   <script
     src="./script.js?v=20260814"
     defer
   ></script>
-
 
 </body>
 </html>
