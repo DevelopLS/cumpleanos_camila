@@ -13,158 +13,412 @@
   <div class="floaters" id="floaters" aria-hidden="true"></div>
 
   <main class="app">
+
+    <!-- INTRO -->
     <section class="screen active" id="intro">
       <div class="panel hero">
-        <div class="eyebrow">14 de agosto · un día bonito</div>
-        <div class="hero-photo photo-frame">
-          <img src="assets/camila-07.webp" alt="Camila sonriendo" />
+
+        <div class="eyebrow">
+          14 de agosto · un día bonito
         </div>
+
+        <div class="hero-photo photo-frame">
+          <img
+            src="camila-07.webp"
+            alt="Camila sonriendo"
+            loading="eager"
+          />
+        </div>
+
         <div class="sparkle">✨</div>
+
         <h1>Feliz cumpleaños, Cami</h1>
+
         <p>
           Hoy quería regalarte algo sencillo, bonito y hecho con cariño.
-          No llevamos tanto tiempo juntos, pero ha sido suficiente para que te vuelvas alguien muy especial para mí.
+          No llevamos tanto tiempo juntos, pero ha sido suficiente para que
+          te vuelvas alguien muy especial para mí.
         </p>
-        <button data-next="wish">Abrir mi detalle para ti</button>
+
+        <button data-next="wish">
+          Abrir mi detalle para ti
+        </button>
+
       </div>
     </section>
 
+
+    <!-- DESEO -->
     <section class="screen" id="wish">
       <div class="panel center">
+
         <div class="mini-icon">🎂</div>
+
         <h2>Primero, un deseo</h2>
+
         <p>
-          Que este nuevo año de vida te encuentre con mucha salud, tranquilidad,
-          personas bonitas alrededor y razones de sobra para sonreír.
+          Que este nuevo año de vida te encuentre con mucha salud,
+          tranquilidad, personas bonitas alrededor y razones de sobra
+          para sonreír.
         </p>
-        <div class="cake" aria-label="Pastel de cumpleaños con velas">
-          <div class="candles"><span></span><span></span><span></span></div>
+
+        <div
+          class="cake"
+          aria-label="Pastel de cumpleaños con velas"
+        >
+          <div class="candles">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
           <div class="cake-top"></div>
           <div class="cake-body"></div>
         </div>
-        <button data-next="teacher">Seguir</button>
+
+        <button data-next="teacher">
+          Seguir
+        </button>
+
       </div>
     </section>
 
+
+    <!-- VOCACIÓN -->
     <section class="screen" id="teacher">
       <div class="panel split-card">
+
         <div class="photo-frame tall">
-          <img src="assets/camila-03.webp" alt="Camila en un paisaje colorido" />
+          <img
+            src="camila-03.webp"
+            alt="Camila en un paisaje colorido"
+            loading="lazy"
+          />
         </div>
+
         <div class="copy">
-          <div class="eyebrow">🌼 Tu vocación</div>
-          <h2>Para la profe que acompaña pequeños comienzos</h2>
-          <p class="type" data-text="Ser profe de jardín no es cualquier cosa: requiere paciencia, ternura, energía y un corazón enorme. Me gusta pensar que cada niño que pasa por tus días se lleva un poquito de tu forma de enseñar, cuidar y hacer sonreír."></p>
-          <button data-next="smile">Continuar</button>
+
+          <div class="eyebrow">
+            🌼 Tu vocación
+          </div>
+
+          <h2>
+            Para la profe que acompaña pequeños comienzos
+          </h2>
+
+          <p
+            class="type"
+            data-text="Ser profe de jardín no es cualquier cosa: requiere paciencia, ternura, energía y un corazón enorme. Me gusta pensar que cada niño que pasa por tus días se lleva un poquito de tu forma de enseñar, cuidar y hacer sonreír."
+          ></p>
+
+          <button data-next="smile">
+            Continuar
+          </button>
+
         </div>
+
       </div>
     </section>
 
+
+    <!-- SONRISA -->
     <section class="screen" id="smile">
       <div class="panel split-card reverse">
+
         <div class="photo-frame tall">
-          <img src="assets/camila-05.webp" alt="Camila sonriendo al aire libre" />
+          <img
+            src="camila-05.webp"
+            alt="Camila sonriendo al aire libre"
+            loading="lazy"
+          />
         </div>
+
         <div class="copy">
-          <div class="eyebrow">☀️ Esa sonrisa</div>
-          <h2>Una de mis partes favoritas de ti</h2>
-          <p class="type" data-text="Me gusta verte sonreír. Tienes una forma muy tuya de verte tranquila, linda y auténtica, incluso en los días más normales. Y sí… esa sonrisa tuya me alegra más de lo que probablemente imaginas."></p>
-          <button data-next="care">Continuar</button>
+
+          <div class="eyebrow">
+            ☀️ Esa sonrisa
+          </div>
+
+          <h2>
+            Una de mis partes favoritas de ti
+          </h2>
+
+          <p
+            class="type"
+            data-text="Me gusta verte sonreír. Tienes una forma muy tuya de verte tranquila, linda y auténtica, incluso en los días más normales. Y sí… esa sonrisa tuya me alegra más de lo que probablemente imaginas."
+          ></p>
+
+          <button data-next="care">
+            Continuar
+          </button>
+
         </div>
+
       </div>
     </section>
 
+
+    <!-- CUIDARTE -->
     <section class="screen" id="care">
       <div class="panel center soft">
-        <div class="mini-icon">🤍</div>
-        <h2>También quiero verte bien</h2>
+
+        <div class="mini-icon">
+          🤍
+        </div>
+
+        <h2>
+          También quiero verte bien
+        </h2>
+
         <p>
-          Sé que estos días has estado un poquito enfermita y que el asma te ha dado lata.
-          Por eso, además de felicitarte, deseo de corazón que te recuperes pronto,
-          que puedas respirar más tranquila y que este cumpleaños venga con descanso, calma y muchos cuidados.
+          Sé que estos días has estado un poquito enfermita y que el asma
+          te ha dado lata. Por eso, además de felicitarte, deseo de corazón
+          que te recuperes pronto, que puedas respirar más tranquila y que
+          este cumpleaños venga con descanso, calma y muchos cuidados.
         </p>
-        <p class="small-note">Prometo que hoy el único exceso permitido es de cariño y pastel. 🎂</p>
-        <button data-next="us">Seguir</button>
+
+        <p class="small-note">
+          Prometo que hoy el único exceso permitido es de cariño y pastel. 🎂
+        </p>
+
+        <button data-next="us">
+          Seguir
+        </button>
+
       </div>
     </section>
 
+
+    <!-- NOSOTROS -->
     <section class="screen" id="us">
       <div class="panel split-card">
-        <div class="photo-stack" aria-hidden="true">
-          <div class="photo-frame polaroid p1"><img src="assets/camila-01.webp" alt="" /></div>
-          <div class="photo-frame polaroid p2"><img src="assets/camila-08.webp" alt="" /></div>
+
+        <div
+          class="photo-stack"
+          aria-hidden="true"
+        >
+
+          <div class="photo-frame polaroid p1">
+            <img
+              src="camila-01.webp"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+
+          <div class="photo-frame polaroid p2">
+            <img
+              src="camila-08.webp"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+
         </div>
+
         <div class="copy">
-          <div class="eyebrow">💛 Nosotros</div>
-          <h2>Poquito tiempo, cariño de verdad</h2>
-          <p class="type" data-text="No quiero medir lo que siento por el calendario. Llevamos poco tiempo, sí, pero me gusta lo que estamos construyendo, conocerte con calma, compartir contigo y descubrir esas cosas pequeñas que te hacen ser tú. Te quiero mucho y me alegra poder celebrar este cumpleaños a tu lado."></p>
-          <button data-next="gallery">Ver unos recuerdos</button>
+
+          <div class="eyebrow">
+            💛 Nosotros
+          </div>
+
+          <h2>
+            Poquito tiempo, cariño de verdad
+          </h2>
+
+          <p
+            class="type"
+            data-text="No quiero medir lo que siento por el calendario. Llevamos poco tiempo, sí, pero me gusta lo que estamos construyendo, conocerte con calma, compartir contigo y descubrir esas cosas pequeñas que te hacen ser tú. Te quiero mucho y me alegra poder celebrar este cumpleaños a tu lado."
+          ></p>
+
+          <button data-next="gallery">
+            Ver unos recuerdos
+          </button>
+
         </div>
+
       </div>
     </section>
 
+
+    <!-- GALERÍA -->
     <section class="screen" id="gallery">
       <div class="panel gallery-panel">
-        <div class="eyebrow">📸 Un poquito de ti</div>
-        <h2>Porque también me gusta guardar tus sonrisas</h2>
-        <div class="gallery">
-          <figure><img src="assets/camila-02.webp" alt="Camila en un lugar iluminado" /></figure>
-          <figure><img src="assets/camila-04.webp" alt="Retrato de Camila" /></figure>
-          <figure><img src="assets/camila-06.webp" alt="Camila en un café" /></figure>
-          <figure><img src="assets/camila-03.webp" alt="Camila frente a una mariposa colorida" /></figure>
-          <figure><img src="assets/camila-05.webp" alt="Camila en una plaza" /></figure>
-          <figure><img src="assets/camila-01.webp" alt="Camila con sombrero" /></figure>
+
+        <div class="eyebrow">
+          📸 Un poquito de ti
         </div>
-        <button data-next="message">Leer lo que quería decirte</button>
+
+        <h2>
+          Porque también me gusta guardar tus sonrisas
+        </h2>
+
+        <div class="gallery">
+
+          <figure>
+            <img
+              src="camila-02.webp"
+              alt="Camila en un lugar iluminado"
+              loading="lazy"
+            />
+          </figure>
+
+          <figure>
+            <img
+              src="camila-04.webp"
+              alt="Retrato de Camila"
+              loading="lazy"
+            />
+          </figure>
+
+          <figure>
+            <img
+              src="camila-06.webp"
+              alt="Camila en un café"
+              loading="lazy"
+            />
+          </figure>
+
+          <figure>
+            <img
+              src="camila-03.webp"
+              alt="Camila frente a una mariposa colorida"
+              loading="lazy"
+            />
+          </figure>
+
+          <figure>
+            <img
+              src="camila-05.webp"
+              alt="Camila en una plaza"
+              loading="lazy"
+            />
+          </figure>
+
+          <figure>
+            <img
+              src="camila-01.webp"
+              alt="Camila con sombrero"
+              loading="lazy"
+            />
+          </figure>
+
+        </div>
+
+        <button data-next="message">
+          Leer lo que quería decirte
+        </button>
+
       </div>
     </section>
 
+
+    <!-- CARTA -->
     <section class="screen" id="message">
       <div class="panel letter">
-        <div class="eyebrow">💌 Para Camila</div>
-        <h2>Feliz cumpleaños, mi Cami</h2>
+
+        <div class="eyebrow">
+          💌 Para Camila
+        </div>
+
+        <h2>
+          Feliz cumpleaños, mi Cami
+        </h2>
+
         <p>
-          Espero que hoy te consientan mucho y que tengas un día de esos que se quedan guardados bonito en la memoria.
+          Espero que hoy te consientan mucho y que tengas un día de esos
+          que se quedan guardados bonito en la memoria.
         </p>
+
         <p>
-          Admiro la dulzura que tienes para trabajar con tus niños, tu forma de seguir adelante y esa mezcla tuya de carácter y ternura.
-          Me alegra haberte encontrado y poder seguir conociéndote sin prisas, disfrutando lo que vamos construyendo.
+          Admiro la dulzura que tienes para trabajar con tus niños,
+          tu forma de seguir adelante y esa mezcla tuya de carácter y ternura.
+          Me alegra haberte encontrado y poder seguir conociéndote sin prisas,
+          disfrutando lo que vamos construyendo.
         </p>
+
         <p>
-          Deseo que este nuevo año te traiga salud, tranquilidad, sueños cumplidos, aventuras,
-          momentos en familia, muchas risas y también tiempo para ti.
+          Deseo que este nuevo año te traiga salud, tranquilidad,
+          sueños cumplidos, aventuras, momentos en familia,
+          muchas risas y también tiempo para ti.
         </p>
+
         <p>
-          Y entre todo eso, espero poder estar presente en muchos momentos bonitos, apoyarte,
-          hacerte reír y seguir sumando recuerdos contigo.
+          Y entre todo eso, espero poder estar presente en muchos momentos
+          bonitos, apoyarte, hacerte reír y seguir sumando recuerdos contigo.
         </p>
-        <p class="signature">Te quiero mucho. Feliz cumpleaños. 💛</p>
-        <button data-next="final">Una última cosa…</button>
+
+        <p class="signature">
+          Te quiero mucho. Feliz cumpleaños. 💛
+        </p>
+
+        <button data-next="final">
+          Una última cosa…
+        </button>
+
       </div>
     </section>
 
+
+    <!-- FINAL -->
     <section class="screen" id="final">
       <div class="panel final-card">
+
         <div class="final-photo photo-frame">
-          <img src="assets/camila-04.webp" alt="Camila" />
+          <img
+            src="camila-04.webp"
+            alt="Camila"
+            loading="lazy"
+          />
         </div>
-        <div class="birthday-badge">🎉 FELIZ CUMPLEAÑOS 🎉</div>
-        <h2>Que este nuevo año te trate muy bonito, Cami.</h2>
+
+        <div class="birthday-badge">
+          🎉 FELIZ CUMPLEAÑOS 🎉
+        </div>
+
+        <h2>
+          Que este nuevo año te trate muy bonito, Cami.
+        </h2>
+
         <p>
           Que sigas enseñando con ternura, sonriendo así de bonito,
           cuidándote mucho y cumpliendo todo eso que sueñas.
         </p>
-        <button id="candlesBtn">Soplar las velitas ✨</button>
-        <div class="surprise hidden" id="surprise">
-          <div class="big-heart">💛</div>
-          <h3>¡Deseo pedido!</h3>
-          <p>El mío ya lo sabes: verte feliz, sana y muy consentida hoy.</p>
+
+        <button id="candlesBtn">
+          Soplar las velitas ✨
+        </button>
+
+        <div
+          class="surprise hidden"
+          id="surprise"
+        >
+
+          <div class="big-heart">
+            💛
+          </div>
+
+          <h3>
+            ¡Deseo pedido!
+          </h3>
+
+          <p>
+            El mío ya lo sabes: verte feliz, sana y muy consentida hoy.
+          </p>
+
         </div>
+
       </div>
     </section>
+
   </main>
 
-  <footer>Hecho especialmente para Camila · con cariño 💛</footer>
+
+  <footer>
+    Hecho especialmente para Camila · con cariño 💛
+  </footer>
+
   <script src="script.js"></script>
+
 </body>
 </html>
